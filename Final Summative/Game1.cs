@@ -13,7 +13,7 @@ namespace Final_Summative
         Texture2D spaceshipTexture, spaceBackground, menuButton, laserTexture, alienTexture;
         Player spaceship;
         SpriteFont bitfont;
-        Rectangle startButton, exitButton, playAgainButton, optionsButton;
+        Rectangle startButton, exitButton, playAgainButton, optionsButton, backButton;
         MouseState mouseState;
         Color colour;
         enum Screen
@@ -45,6 +45,7 @@ namespace Final_Summative
             optionsButton = new Rectangle(70, 563, 200, 75);
             playAgainButton = new Rectangle(70, 563, 200, 75);
             exitButton = new Rectangle(70, 663, 200, 75);
+            backButton = new Rectangle();
             colour = Color.White;
             base.Initialize();
         }
@@ -84,7 +85,9 @@ namespace Final_Summative
             }
             if (screen == Screen.options)
             {
-
+                if (mouseState.LeftButton == ButtonState.Pressed)
+                    if (backButton.Contains(mouseState.X, mouseState.Y))
+                        screen = Screen.intro;
             }
             if (screen == Screen.game)
             {
@@ -134,6 +137,9 @@ namespace Final_Summative
             else if (screen == Screen.options)
             {
                 _spriteBatch.Draw(spaceBackground, new Rectangle(0, 0, _graphics.PreferredBackBufferWidth, _graphics.PreferredBackBufferHeight), Color.White);
+                _spriteBatch.DrawString(bitfont, (""), new Vector2(80, 483), colour);
+                _spriteBatch.DrawString(bitfont, (""), new Vector2(80, 583), colour);
+                _spriteBatch.DrawString(bitfont, ("GO BACK"), new Vector2(80, 683), colour);
 
             }
             else if (screen == Screen.game)
