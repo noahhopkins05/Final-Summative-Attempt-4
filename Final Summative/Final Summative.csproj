@@ -14,6 +14,8 @@
     <None Remove="Content\16bitfont.spritefont" />
     <None Remove="Content\16bitfont.ttf" />
     <None Remove="Content\File.spritefont" />
+    <None Remove="Content\laser.png" />
+    <None Remove="Content\spaceFont.spritefont" />
     <None Remove="Icon.ico" />
     <None Remove="Icon.bmp" />
   </ItemGroup>

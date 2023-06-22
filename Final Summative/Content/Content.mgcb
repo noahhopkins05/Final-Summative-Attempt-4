@@ -13,9 +13,6 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin ../../../../../Downloads/old-school-adventures-font/16bitfont.ttf
-/copy:../../../../../Downloads/old-school-adventures-font/16bitfont.ttf;16bitfont.ttf
-
 #begin alienwithoutline.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -40,7 +37,7 @@
 /processorParam:TextureFormat=Color
 /build:black_square.png
 
-#begin laser.png
+#begin bullet.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -50,7 +47,14 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:laser.png
+/build:bullet.png
+
+#begin placeholderfont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:placeholderfont.spritefont
 
 #begin spacebackground.png
 /importer:TextureImporter
@@ -63,13 +67,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:spacebackground.png
-
-#begin spaceFont.spritefont
-/importer:FontDescriptionImporter
-/processor:FontDescriptionProcessor
-/processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
-/build:spaceFont.spritefont
 
 #begin spaceshiptexture.png
 /importer:TextureImporter
